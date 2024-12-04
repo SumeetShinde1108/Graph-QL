@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "ingredients",
+    "graphene_django",
 ]
+
+GRAPHENE = {
+    "SCHEMA": "cookbook.schema.schema"
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
